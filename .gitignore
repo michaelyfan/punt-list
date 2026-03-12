@@ -1,4 +1,5 @@
 .DS_Store
+.idea
 
 # Miscellaneous
 *.class
@@ -8,8 +9,6 @@
 *.swp
 .buildlog/
 .history
-
-
 
 # Flutter repo-specific
 /bin/cache/
