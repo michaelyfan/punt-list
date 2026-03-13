@@ -43,3 +43,24 @@ Screens:
 | Tap + on Lists screen | Creates and opens a new list |
 | Tap gear on Lists screen | Opens Settings |
 | Configure move destination in Settings | Sets destination list for each source list's move arrow |
+| Tap item text | Opens inline text field to edit item |
+| Uncheck a checked item | Moves it back to active (top) section |
+| Checked items | Cannot be moved via the → arrow |
+
+## Behaviors
+
+- Deleting a list clears it as a destination from any other list that referenced it
+- New list creation immediately navigates to the new list (default name "New List")
+
+## TODOs — Not Yet Implemented
+
+### Deferred Infrastructure
+- **Data persistence** — no local storage or database yet; all state is in-memory and lost on app restart
+- **Authentication** — no user accounts or auth; implement later
+
+### Deferred Features
+- **Item reordering** — drag-to-reorder active items within a list
+- **Undo on delete** — snackbar with undo when an item or list is deleted
+- **Clear checked items** — bulk action to delete all checked items at once
+- **List ordering** — drag-to-reorder lists on the Lists Screen
+- **Onboarding trigger logic** — currently Help popup is accessible only via Settings; decide when to auto-show (e.g. first launch only)
